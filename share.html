@@ -8,21 +8,49 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-<script type="text/javascript">var switchTo5x=true;</script>
-<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-<script type="text/javascript">stLight.options({publisher: "037b39e9-8f47-4b0f-8b8a-392e5deaa738", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>        
+		<script type="text/javascript">var switchTo5x=true;</script>
+		<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
     </head>
  	<body>
         <!-- Add your site or application content here -->
         <p>Hello world! This is HTML5 Boilerplate.</p>
+<!--
 <span class='st_sharethis_large' displayText='ShareThis'></span>
 <span class='st_facebook_large' displayText='Facebook'></span>
 <span class='st_twitter_large' displayText='Tweet'></span>
 <span class='st_linkedin_large' displayText='LinkedIn'></span>
 <span class='st_pinterest_large' displayText='Pinterest'></span>
 <span class='st_email_large' displayText='Email'></span>
+-->
 
-    </body>   
+<span id="button_1"></span>
+	<br/><br/>
+<span id="button_2"></span>
+
+		<script type="text/javascript">
+			stLight.options({publisher: "037b39e9-8f47-4b0f-8b8a-392e5deaa738", doNotHash: false, doNotCopy: false, hashAddressBar: false});
+			stWidget.addEntry({
+				"service":"sharethis",
+				"element":document.getElementById('button_1'),
+				"url":"http://zulu.social",
+				"title":"sharethis",
+				"type":"large",
+				"text":"ShareThis" ,
+
+				"summary":"Short cuts description1"
+			});
+			stWidget.addEntry({
+				"service":"sharethis",
+				"element":document.getElementById('button_2'),
+				"url":"http://livebrick.com",
+				"title":"sharethis",
+				"type":"large",
+				"text":"ShareThis" ,
+				"image":"http://farm4.static.flickr.com/3571/3427619794_13dae8e979_o.png",
+				"summary":"Long cut description2"
+			});
+		</script>
+
+    </body>
     </html>
+
