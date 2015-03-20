@@ -13,12 +13,25 @@
     </head>
  	<body>
     <p>IFrame containing flow flow wordpage</p>
+    <button id='button'>Toggle</button>
     <hr/>
-    <iframe 
+    <iframe id="test"
       src="https://app3.livebrick.com/devLivebrick/site1/invitee-view/" 
       allowtransparency="true" 
       frameBorder="0" 
-      style="height: 700px; width: 100%;">
+      style="height: 700px; width: 100%;display:'none'">
     </iframe>
+    <script>
+    	var button = document.getElementById('button'); // Assumes element with id='button'
+	button.onclick = function() {
+	    var element = document.getElementById('test');
+	    if (element.style.display !== 'none') {
+	        element.style.display = 'none';
+	    }
+	    else {
+	        element.style.display = 'block';
+	    }
+	};
+    </script>
   </body>
 </html>
