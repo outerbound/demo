@@ -19,21 +19,19 @@
       src="https://app3.livebrick.com/devLivebrick/site1/invitee-view/" 
       allowtransparency="true" 
       frameBorder="0" 
-      style="height: 700px; width: 100%;display:none">
+      style="height: 700px; width: 100%;display:'none'">
     </iframe>
     <script>
     	var button = document.getElementById('button'); // Assumes element with id='button'
 	button.onclick = function() {
-		
+		alert('button clicked');
 	    var element = document.getElementById('test');
-	    //alert('My display before ' + element.style.display);
 	    if (element.style.display !== 'none') {
 	        element.style.display = 'none';
 	    }
 	    else {
 	        element.style.display = 'block';
 	    }
-	    //alert('My display after ' + element.style.display);
 	};
     </script>
   </body>
